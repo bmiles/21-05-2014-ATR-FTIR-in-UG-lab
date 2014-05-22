@@ -39,10 +39,10 @@ newFileName <- paste(getwd(), "/graphs/ATR-FTIR test with a Ge ATR crystal detai
   par(mfrow = c(1,1), mar = c(5.1,5.1,4.1,2.1))
   plotSpectra(baseSpec,
               which=c(3,2,1),
-              xlim=c(1800,800),
+              xlim=c(1800,1300),
               title="ATR-FTIR test with a Ge ATR crystal APTES detail, 21-05-2014",
               offset= 0.01,
-              yrange=c(-0.01,0.15),
+              yrange=c(-0.01,0.05),
               xaxt = "n",
               lab.pos = (mean(baseSpec$freq)*0.65))
   at <- seq(from = 0, to = max(baseSpec$freq), by = 20)
